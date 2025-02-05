@@ -12,3 +12,6 @@ def hello(request):
 
 def youtube(request):
     return HttpResponse("<h1> Watch Youtube Videos </h1>")
+
+def form(request):
+    return render(request, 'form.html')

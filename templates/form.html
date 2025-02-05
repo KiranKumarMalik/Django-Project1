@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+    body
+{
+  background-image: url(https://images.pexels.com/photos/1450361/pexels-photo-1450361.jpeg?cs=srgb&dl=pexels-asadphoto-1450361.jpg&fm=jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#regd-form
+{
+    background: linear-gradient(45deg, rgb(111, 78, 175),rgb(57, 28, 57));
+    width: 300px;
+    height: 450px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 80px auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.regd-group
+{
+
+}
+
+input[type="text"], input[type="email"], input[type="password"], label, textarea
+{
+    border: none;
+    width: 200px;
+    outline: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+input[type="submit"]
+{
+    background: linear-gradient(45deg, rgb(111, 78, 175),rgb(57, 28, 57));
+    width: 235px;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+}
+input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: linear-gradient(45deg, rgb(179, 190, 98),rgb(208, 127, 208));
+    color: black;
+}
+.fa-user
+{
+    background: linear-gradient(45deg, rgb(111, 78, 175),rgb(57, 28, 57));
+    border-radius: 100px;
+    padding: 15px;
+    color: white;
+    margin-top: 10px;
+    font-size: 40px;
+    position: relative;
+}
+
+  </style>
+<body>
+    <div id="regd-form">
+        <form>
+          <i class='fa fa-user' aria-hidden="true"></i>
+            <div class="form-group">
+              <input type="text" placeholder="Enter Username">
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Enter Password">
+              </div>
+            <div class="form-group">
+              <textarea placeholder="Description"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit">
+            </div>
+        </form>
+    </div> 
+</body>
+</html>

@@ -18,6 +18,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app.views import *
+from zomato.views import *
+from swiggy.views import *
+from blinkit.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +28,11 @@ urlpatterns = [
     path('sagar/',sagar, name='sagar'),
     path('hello/', hello, name='hello'),
     path('youtube/',youtube, name='youtube'),
-    path('form/',form,name='form')
+    path('form/',form,name='form'),
+    path('welcome/',welcome, name='welcome'),
+    path('zomato/',zomato, name='zomato'),
+    path('welcomeswiggy/',welcomeswiggy,name='welcomeswiggy'),
+    path('swiggy/',swiggy, name='swiggy'),
+    path('welcomeblinkit/',welcomeblinkit,name='welcomeblinkit'),
+    path('blinkit/',blinkit,name='blinkit')
 ]
